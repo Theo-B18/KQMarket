@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #F600FF;
+    --second-color: #ffd801;
+    --third-color: #EBECF0;
+    --fourth-color: white;
+}
+
+.bg-yellow {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.bg-purple {
+    background-color: var(--main-color);
+    color: var(--fourth-color);
+}
+
+.navbar-brand img {
+    width: 80px;
+}
+
+.myclass-btn-search {
+    color: var(--fourth-color);
+    background-color: var(--main-color);
+}
+
+.search-message {
+    position: relative;
+    top: 35px;
+    right: 200px;
+    display: none;
+}
+
+.myclass-white-color-font {
+    color: var(--fourth-color);
+    font-weight: bold;
+}
+
+.ul li a:hover {
+    text-decoration: underline;
+    background-color: var(--second-color);
+    color: #F600FF;
+}
+
+.dropdown-menu {
+    background-color: var(--second-color);
+    color: var(--third-color);
+}
+
+.dropdown-menu a {
+    color: var(--main-color);
+    font-weight: 18px;
+}
+
+.dropdown-menu a:hover {
+    border: 3px dotted;
+    background-color: var(--main-color);
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.myclass-nav li a i {
+    width: 70px;
+    /* THIS WILL EXPAND THE DISTANCE BETWEEN NAV ICONS */
+}
+
+.myclass-welcome {
+    display: none;
+    color: var(--main-color);
+}
+
+.myclass-nav-icon {
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.badge {
+    left: 20px;
+    position: relative;
+    background-color: var(--second-color);
+    bottom: 10px;
+    width: 70px;
+    height: 45px;
+    display: none;
+    border-radius: 100px 100px 100px 100px;
+}
+
+#notify {
+    position: relative;
+    font-size: xx-large;
+    color: red;
+    display: none;
+}
+
+#success {
+    display: none;
+}
+
+.bling-text {
+    animation: bling 1.05s infinite;
+}
+
+@keyframes bling {
+    0% {
+        color: var(--main-color);
+    }
+    100% {
+        color: var(--second-color);
+    }
+}
+
+
+/* Carousel */
+
+.myclass-row-one {
+    margin-top: 390px;
+}
+
+.carousel-item img {
+    width: 250px;
+    height: 250px;
+}
+
+.card {
+    width: 250px;
+    height: 540px;
+    background-color: var(--main-color);
+    border: 8px solid gray;
+}
+
+.card img {
+    width: 250px;
+    height: 300px;
+    border: 6px solid var(--second-color);
+}
+
+.card-body p {
+    line-height: 4px;
+    color: var(--fourth-color);
+}
+
+.card-body a {
+    color: var(--main-color);
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.form-control {
+    background-color: var(--third-color);
+    color: var(--main-color);
+}
+
+option {
+    background-color: var(--third-color);
+    color: var(--main-color);
+}
+
+.btn-add {
+    background-color: black;
+    color: var(--third-color);
+    border-radius: 12px 12px 12px 12px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.btn-add:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+    border-radius: 12px 12px 12px 12px;
+    margin-top: 8px;
+    box-shadow: 2px 2px 2px 2px #EBECF0;
+    font-weight: bold;
+}
+
+.myclass-card-row {
+    width: 100%;
+    border: 10px solid var(--second-color);
+    margin-top: 20px;
+}
+
+
+/* FOOTER STYLING */
+
+.myclass-go-up {
+    padding: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.myclass-go-up a i {
+    font-size: 50px;
+}
+
+.fa-arrow-circle-up {
+    color: var(--main-color);
+}
+
+.myclass-footer {
+    margin-top: 40px;
+    margin-left: 0px;
+    background-color: var(--main-color);
+    padding: 30px;
+}
+
+.info-box li {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.myclass-h5 {
+    color: var(--fourth-color);
+}
+
+.white-text {
+    color: var(--fourth-color);
+}
+
+.purple-text {
+    color: var(--main-color);
+}
+
+.myclass-btn-subscribe {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.white-text a {
+    color: var(--fourth-color);
+    font-size: x-large;
+    font-family: 'Teko', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.myclass-footer-social-links {
+    background-color: var(--second-color);
+    padding: 8px;
+}
+
+.myclass-footer-social-links {
+    display: flex;
+    align-items: flex-end;
+}
+
+.myclass-footer-social-links a {
+    padding: 16px;
+}
+
+.fa-facebook-square {
+    font-size: 40px;
+}
+
+.fa-smile-o {
+    color: #e72c83;
+    font-size: 40px;
+}
+
+.fa-instagram2 {
+    font-size: 40px;
+    background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+    background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+    background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-twitter {
+    font-size: 40px;
+}
+
+.fa-pinterest-square {
+    color: red;
+    font-size: 40px;
+}
+
+.myclass-copyright {
+    background-color: var(--main-color);
+    color: var(--fourth-color);
+    padding: 4px;
+}
+
+
+/* MEDIA QUIRIES */
+
+@media only screen and (max-width:768px) {
+    .myclass-footer {
+        display: flex;
+        flex-direction: column-reverse;
+        display: block;
+    }
+}
+
+
+/* FORM STYLES */
+
+.container-id h5,
+p {
+    display: inline;
+}
+
+.container-id {
+    display: none;
+}
+
+.purple-border form {
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.purple-border {
+    border: 5px solid var(--main-color);
+}
+
+.yellow-border {
+    border: 5px solid var(--second-color);
+}
+
+.btn-purple {
+    background-color: var(--main-color);
+    color: var(--third-color);
+}
+
+.btn-yellow {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.log-link a:hover {
+    text-decoration: none;
+}
+
+
+/* ALL ALERT CLASSES */
+
+.myclass-warning,
+.password-alert {
+    color: red;
+    display: none;
+}

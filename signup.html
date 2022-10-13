@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp || KQ Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Teko:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="yellow-border">
+            <div class="purple-border">
+                <form>
+                    <div class="p-2 text-center">
+                        <a class="navbar-brand" id="goUp" href="index.html"> <img src="logo/Untitled-1.png" alt=""></a>
+                        <h3 class="purple-text">Sign up here</h3>
+                    </div>
+                    <div class="container-id">
+                        <h5 id="fullname">Reg fullname</h5>
+                        <p> having ID: <cite id="reg-id">000000</cite>KQ</p><br>
+                        <p class="form-text" id="rem-msg">Please remember ID</p>
+                        <div class=" ">
+                            <p class="form-text" id="instruct">Please click this link to <a class="navbar-brand" id="login-btn" href="login.html">go to account</a></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" placeholder="First Name">
+                        <small id="f-name-alert" class="form-text  myclass-warning">First name field is empty!</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="middle-name" aria-describedby="emailHelp" placeholder="Middle Name">
+                        <small id="m-name-alert" class="form-text myclass-warning">Middle name field is empty!</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="last-name" aria-describedby="emailHelp" placeholder="Last Name">
+                        <small id="l-name-alert" class="form-text myclass-warning">Last name field is empty!</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="form-control" id="birth-date" aria-describedby="emailHelp" placeholder="Date of Birth">
+                    </div>
+                    <div class="form-group">
+                        <select name="gender" id="gender" class="form-control">
+                            <option value="1"> Male</option>
+                            <option value="2">female</option>
+                            <option value="3">Transgender</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="address" aria-describedby="emailHelp" placeholder="Adress">
+                        <small id="location" class="form-text text-muted">Give address of your living area.</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="house-address" aria-describedby="emailHelp" placeholder="House Address">
+                        <small id="house" class="form-text text-muted">Give address of your house including house number.</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="land-mark" aria-describedby="emailHelp" placeholder="Land Mark">
+                        <small id="land-mark-alert" class="form-text text-muted">Give address of your house including house number.</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="city" aria-describedby="emailHelp" placeholder="City">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="state" aria-describedby="emailHelp" placeholder="State">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" value="+91" id="mobile-number" aria-describedby="emailHelp" placeholder="Mobile number">
+                    </div>
+                    <div class="form-group">
+                        <input type="numder" class="form-control" value="+91" id="alt-number" aria-describedby="emailHelp" placeholder="Alt-number">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="pwd1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="pwd2" placeholder="Confirmed Password">
+                        <small id="password-alert" class="form-text password-alert">Password does not match</small>
+                    </div>
+                    <div class="register-btn p-4">
+                        <button type="button" class="btn btn-purple" onclick="regbtn()">Register</button>
+                        <a href="javascript:history.go(-1)">
+                            <button type="button" class="btn btn-danger">Cancel</button>
+                        </a>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="myscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
